@@ -1,0 +1,189 @@
+[
+  // ==================== GENERAL ====================
+  // Semicolon for command mode (matching your ; -> : mapping)
+  {
+    "context": "VimControl && !menu",
+    "bindings": {
+      ";": ["workspace::SendKeystrokes", ":"]
+    }
+  },
+
+  // ==================== WINDOW NAVIGATION ====================
+  // Ctrl+hjkl for window navigation (matching your <C-h/j/k/l> mappings)
+  {
+    "context": "Workspace",
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-h": ["workspace::ActivatePaneInDirection", "Left"],
+      "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"],
+      "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
+      "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"]
+    }
+  },
+
+  // ==================== SPLIT MANAGEMENT ====================
+  // Leader + s* for splits (matching your <leader>sv, so, se, sx mappings)
+  {
+    "context": "Editor && vim_mode == normal && !menu",
+    "bindings": {
+      // Split vertical
+      "space s v": "pane::SplitRight",
+      // Split horizontal
+      "space s o": "pane::SplitDown",
+      // Close split
+      "space s x": "pane::CloseActiveItem",
+      // Toggle maximize (like vim-maximizer)
+      "space s m": "workspace::ToggleZoom"
+    }
+  },
+
+  // ==================== WORKSPACE/TAB MANAGEMENT ====================
+  // Leader + w* for workspace/tabs (matching your <leader>wo, wx, wn, wp, wf)
+  {
+    "context": "Workspace",
+    "bindings": {
+      "space w o": "workspace::NewFile",
+      "space w x": "pane::CloseActiveItem",
+      "space w n": "pane::ActivateNextItem",
+    }
+  },
+
+  // ==================== FILE EXPLORER ====================
+  // Leader + e for file explorer (matching your <leader>e for NvimTree)
+  {
+    "context": "Workspace",
+    "bindings": {
+      "space e": "workspace::ToggleRightDock"
+    }
+  },
+
+  // ==================== SEARCH ====================
+  // Clear search highlights (matching <leader>nh)
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+    }
+  },
+
+  // ==================== TELESCOPE-LIKE FINDERS ====================
+  // Matching your Telescope/finder keybindings
+  {
+    "context": "Workspace",
+    "bindings": {
+      // Find file (like <leader>ff)
+      "space f f": "file_finder::Toggle",
+      // Find word/grep (like <leader>fw)
+      "space f w": "pane::DeploySearch",
+      // Recent files (like <leader>fo)
+      "space f o": "file_finder::Toggle",
+      // Theme picker (like <leader>th)
+      "space t h": "theme_selector::Toggle"
+    }
+  },
+
+  // ==================== LSP / CODE ACTIONS ====================
+  // Code actions (matching <leader>ca)
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      "space c a": "editor::ToggleCodeActions",
+      // Show line diagnostics (like <space>we)
+      "space w e": "diagnostics::Deploy",
+      // Diagnostics list (like <leader>ll)
+      "space l l": "diagnostics::Deploy"
+    }
+  },
+
+  // ==================== GIT ====================
+  // Git keybindings (matching your lazygit mappings)
+  {
+    "context": "Workspace",
+    "bindings": {
+      "space l g": "workspace::NewTerminal",
+      "space g p": "projects::OpenRecent"
+    }
+  },
+
+  // ==================== PROJECTS ====================
+  // Project management (matching <leader>pp and <leader>po)
+  {
+    "context": "Workspace",
+    "bindings": {
+      "space p p": "projects::OpenRecent",
+      "space p o": "projects::OpenRecent"
+    }
+  },
+
+  // ==================== DEBUGGING ====================
+  // DAP-like debugging keybindings
+  {
+    "context": "Editor",
+    "bindings": {
+      "space d o": "debugger::Continue",
+      "space d b": "debugger::ToggleDataBreakpoint",
+      "space d x": "debugger::Stop",
+      "space d r": "debugger::Restart",
+      "space d s o": "debugger::StepOver",
+      "space d s i": "debugger::StepInto",
+      "space d s u": "debugger::StepOut"
+    }
+  },
+
+  // ==================== TODO COMMENTS ====================
+  // Search TODOs (like <leader>tt)
+  {
+    "context": "Workspace",
+    "bindings": {
+      "space t t": ["pane::DeploySearch", { "query": "TODO|FIXME|HACK|WARN" }]
+    }
+  },
+
+  // ==================== LINE MOVEMENT ====================
+  // Alt+j/k for moving lines (matching <A-j> and <A-k>)
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      "alt-j": "editor::MoveLineDown",
+      "alt-k": "editor::MoveLineUp"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == visual",
+    "bindings": {
+      "alt-j": "editor::MoveLineDown",
+      "alt-k": "editor::MoveLineUp",
+      "shift-j": "editor::MoveLineDown",
+      "shift-k": "editor::MoveLineUp"
+    }
+  },
+
+  // ==================== INCREMENT/DECREMENT ====================
+  // Number increment/decrement (matching <leader>+ and <leader>-)
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      "space +": "vim::Increment",
+      "space -": "vim::Decrement"
+    }
+  },
+
+  // ==================== COMPLETION ====================
+  // Alt+j/k for completion navigation (matching your blink.cmp config)
+  {
+    "context": "Editor && showing_completions",
+    "bindings": {
+      "alt-j": "editor::SelectNext",
+      "alt-k": "editor::SelectPrevious",
+    }
+  },
+
+  // ==================== TERMINAL ====================
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-`": "terminal_panel::ToggleFocus"
+    }
+  }
+]

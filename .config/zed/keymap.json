@@ -1,0 +1,146 @@
+[
+  // ==================== GENERAL ====================
+  {
+    "context": "VimControl && !menu",
+    "bindings": {
+      ";": ["workspace::SendKeystrokes", ":"]
+    }
+  },
+
+  // ==================== WINDOW NAVIGATION ====================
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-j": "workspace::ActivatePaneDown",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "ctrl-l": "workspace::ActivatePaneRight"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-j": "workspace::ActivatePaneDown",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "ctrl-l": "workspace::ActivatePaneRight"
+    }
+  },
+  {
+    "context": "Dock",
+    "bindings": {
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-j": "workspace::ActivatePaneDown",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "ctrl-l": "workspace::ActivatePaneRight"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-j": "workspace::ActivatePaneDown",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "ctrl-l": "workspace::ActivatePaneRight"
+    }
+  },
+
+  // ==================== ALL SPACE BINDINGS (normal mode only) ====================
+  {
+    "context": "Editor && vim_mode == normal && !menu",
+    "bindings": {
+      // Splits
+      "space s v": "pane::SplitRight",
+      "space s o": "pane::SplitDown",
+      "space s x": "pane::CloseActiveItem",
+      "space s m": "workspace::ToggleZoom",
+
+      // Workspace/tabs
+      "space w o": "workspace::NewFile",
+      "space w x": "pane::CloseActiveItem",
+      "space w n": "pane::ActivateNextItem",
+
+      // File explorer
+      "space e": "workspace::ToggleRightDock",
+
+      // Finders
+      "space f f": "file_finder::Toggle",
+      "space f w": "pane::DeploySearch",
+      "space f o": "file_finder::Toggle",
+
+      // Theme
+      "space t h": "theme_selector::Toggle",
+
+      // LSP
+      "space c a": "editor::ToggleCodeActions",
+      "space w e": "diagnostics::Deploy",
+      "space l l": "diagnostics::Deploy",
+
+      // Git
+      "space l g": "git_panel::ToggleFocus",
+      "space g p": "projects::OpenRecent",
+
+      // Projects
+      "space p p": "projects::OpenRecent",
+      "space p o": "projects::OpenRecent",
+
+      // Debugging
+      "space d o": "debugger::Continue",
+      "space d b": "debugger::ToggleDataBreakpoint",
+      "space d x": "debugger::Stop",
+      "space d r": "debugger::Restart",
+      "space d s o": "debugger::StepOver",
+      "space d s i": "debugger::StepInto",
+      "space d s u": "debugger::StepOut",
+
+      // Increment/decrement
+      "space +": "vim::Increment",
+      "space -": "vim::Decrement"
+    }
+  },
+
+  // ==================== LINE MOVEMENT ====================
+  {
+    "context": "Editor && vim_mode == normal && !menu",
+    "bindings": {
+      "alt-j": "editor::MoveLineDown",
+      "alt-k": "editor::MoveLineUp"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == visual && !menu",
+    "bindings": {
+      "alt-j": "editor::MoveLineDown",
+      "alt-k": "editor::MoveLineUp"
+    }
+  },
+
+  // ==================== COMPLETION ====================
+  {
+    "context": "Editor && showing_completions",
+    "bindings": {
+      "alt-j": "editor::ContextMenuNext",
+      "alt-k": "editor::ContextMenuPrevious"
+    }
+  },
+
+  // ==================== MENU / POPUP NAVIGATION ====================
+  {
+    "context": "menu",
+    "bindings": {
+      "j": "menu::SelectNext",
+      "k": "menu::SelectPrevious",
+      "h": "menu::Cancel",
+      "l": "menu::Confirm"
+    }
+  },
+
+  // ==================== TERMINAL ====================
+  {
+    "context": "Workspace",
+    "bindings": {
+      "alt-h": "workspace::ToggleBottomDock",
+      "alt-v": "workspace::ToggleRightDock"
+    }
+  }
+]

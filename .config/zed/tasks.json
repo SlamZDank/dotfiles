@@ -1,0 +1,84 @@
+{
+  // Task definitions for running builds, tests, etc.
+  // These replace your DAP/debug configurations
+  
+  "tasks": [
+    // Rust tasks
+    {
+      "label": "Rust: cargo build",
+      "command": "cargo build",
+      "use_new_terminal": false,
+      "allow_concurrent_runs": false,
+      "reveal": "always"
+    },
+    {
+      "label": "Rust: cargo run",
+      "command": "cargo run",
+      "use_new_terminal": false,
+      "allow_concurrent_runs": false,
+      "reveal": "always"
+    },
+    {
+      "label": "Rust: cargo test",
+      "command": "cargo test",
+      "use_new_terminal": false,
+      "allow_concurrent_runs": false,
+      "reveal": "always"
+    },
+    {
+      "label": "Rust: cargo clippy",
+      "command": "cargo clippy",
+      "use_new_terminal": false,
+      "allow_concurrent_runs": false,
+      "reveal": "always"
+    },
+
+    // C/C++ tasks
+    {
+      "label": "C++: build with clang++",
+      "command": "clang++ -g -o ${file_stem} ${file}",
+      "use_new_terminal": false,
+      "allow_concurrent_runs": false,
+      "reveal": "always"
+    },
+    {
+      "label": "C: build with clang",
+      "command": "clang -g -o ${file_stem} ${file}",
+      "use_new_terminal": false,
+      "allow_concurrent_runs": false,
+      "reveal": "always"
+    },
+
+    // Python tasks
+    {
+      "label": "Python: run current file",
+      "command": "python ${file}",
+      "use_new_terminal": false,
+      "allow_concurrent_runs": false,
+      "reveal": "always"
+    },
+
+    // Node/TypeScript tasks
+    {
+      "label": "npm: install",
+      "command": "npm install",
+      "use_new_terminal": false,
+      "allow_concurrent_runs": false,
+      "reveal": "always"
+    },
+    {
+      "label": "npm: run dev",
+      "command": "npm run dev",
+      "use_new_terminal": true,
+      "allow_concurrent_runs": false,
+      "reveal": "always"
+    },
+    {
+      "label": "npm: run build",
+      "command": "npm run build",
+      "use_new_terminal": false,
+      "allow_concurrent_runs": false,
+      "reveal": "always"
+    }
+  ]
+}

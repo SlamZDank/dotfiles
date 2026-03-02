@@ -1,0 +1,10 @@
+{
+  // Local settings for specific projects can go here
+  // This file is for machine-specific overrides
+  
+  // Example: Override theme for local preference
+  // "theme": "One Dark"
+  
+  // Example: Different font on this machine
+  // "buffer_font_family": "Fira Code"
+}
