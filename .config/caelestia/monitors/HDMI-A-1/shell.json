@@ -1,0 +1,22 @@
+{
+    "appearance": {
+        "font": {
+            "scale": 1
+        }
+    },
+    "dashboard": {
+        "enabled": false
+    },
+    "notifs": {
+        "clearThreshold": 0.3,
+        "expandThreshold": 30,
+        "groupPreviewNum": 0,
+        "openExpanded": false
+    },
+    "osd": {
+        "enableBrightness": false,
+        "enableMicrophone": true,
+        "enabled": true,
+        "hideDelay": 2000
+    }
+}

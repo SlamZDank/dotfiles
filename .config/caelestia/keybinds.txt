@@ -1,0 +1,146 @@
+Keybinds
+Super+Shift+K              | Show keybinds cheat sheet
+
+Launcher
+Super+Super_L              | Open launcher
+
+Input
+Super+Caps                 | Toggle caps lock
+
+Session
+Ctrl+Alt+Delete            | Session menu
+Super+N                    | Toggle sidebar
+Ctrl+Alt+C                 | Clear notifications
+Super+K                    | Show all panels
+Super+L                    | Lock screen
+Super+Alt+L                | Restore lock
+
+Brightness
+XF86MonBrightnessUp        | Brightness up
+XF86MonBrightnessDown      | Brightness down
+
+Media
+Ctrl+Super+Space           | Toggle media playback
+XF86AudioPlay              | Play
+XF86AudioPause             | Pause
+XF86AudioStop              | Stop
+Ctrl+Super+Equal           | Next track
+XF86AudioNext              | Next track
+Ctrl+Super+Minus           | Previous track
+XF86AudioPrev              | Previous track
+
+Shell
+Ctrl+Super+Shift+R         | Kill caelestia shell
+Ctrl+Super+Alt+R           | Restart caelestia shell
+
+Workspace navigation
+Super+0-9                  | Go to workspace 1-10
+Ctrl+Super+Right           | Next workspace
+Ctrl+Super+Left            | Previous workspace
+Super+Page_Up              | Next workspace
+Super+Page_Down            | Previous workspace
+Super+Scroll_Down          | Focus workspace -1
+Super+Scroll_Up            | Focus workspace +1
+Ctrl+Super+Scroll_Down     | Focus workspace group -1
+Ctrl+Super+Scroll_Up       | Focus workspace group +1
+Ctrl+Super+0-9              | Focus workspace group 1-10
+
+Workspace move
+Super+Alt+0-9              | Move window to workspace 1-10
+Super+Alt+Page_Up          | Move window to workspace -1
+Super+Alt+Page_Down        | Move window to workspace +1
+Super+Alt+Scroll_Down      | Move window to workspace -1
+Super+Alt+Scroll_Up        | Move window to workspace +1
+Ctrl+Super+Shift+Right     | Move window to workspace +1
+Ctrl+Super+Shift+Left      | Move window to workspace -1
+Ctrl+Super+Shift+Up        | Move window to special workspace
+Ctrl+Super+Shift+Down      | Move window out of special
+Super+Alt+S                | Move window to special workspace
+Ctrl+Super+Alt+0-9          | Move window to workspace group 1-10
+
+Window groups
+Alt+Tab                    | Cycle next group
+Shift+Alt+Tab              | Cycle previous group
+Ctrl+Alt+Tab               | Next group tab
+Ctrl+Shift+Alt+Tab         | Previous group tab
+Super+Comma                | Toggle group
+Super+U                    | Ungroup window
+Super+Shift+Comma          | Lock active group
+
+Window focus
+Super+Left                 | Focus left
+Super+Right                | Focus right
+Super+Up                   | Focus up
+Super+Down                 | Focus down
+
+Window move
+Super+Shift+Left           | Move window left
+Super+Shift+Right          | Move window right
+Super+Shift+Up             | Move window up
+Super+Shift+Down           | Move window down
+
+Window resize
+Super+Minus                | Resize width -10%
+Super+Equal                | Resize width +10%
+Super+Shift+Minus          | Resize height -10%
+Super+Shift+Equal          | Resize height +10%
+Super+Alt+Left             | Resize left
+Super+Alt+Right            | Resize right
+Super+Alt+Up               | Resize up
+Super+Alt+Down             | Resize down
+
+Window actions
+Super+mouse:272            | Drag window
+Super+Z                    | Move mode (drag)
+Super+mouse:273            | Resize window
+Super+X                    | Resize mode
+Ctrl+Super+Backslash       | Center window
+Ctrl+Super+Alt+Backslash   | PIP resize + center
+Super+Alt+Backslash        | PIP mode (float + pin)
+Super+P                    | Pin window
+Super+F                    | Fullscreen
+Super+Alt+F                | Maximized fullscreen
+Super+Alt+Space            | Toggle floating
+Super+Q                    | Close window
+
+Special workspaces
+Super+S                    | Toggle special workspace
+Ctrl+Shift+Escape          | Toggle system monitor
+Super+M                    | Toggle music
+Super+D                    | Toggle communication
+Super+R                    | Toggle todo
+
+Apps
+Super+T                    | Open terminal
+Super+W                    | Open browser (firefox)
+Super+C                    | Open editor (codium)
+Super+E                    | Open file manager (thunar)
+Ctrl+Alt+V                 | Audio settings (pavucontrol)
+
+Utilities
+Print                      | Screenshot
+Super+Shift+S              | Screenshot frozen
+Super+Shift+Alt+S          | Screenshot region
+Super+Alt+R                | Record screen with audio
+Ctrl+Alt+R                 | Record screen
+Super+Shift+Alt+R          | Record screen region
+Super+Shift+C              | Color picker
+Insert                     | Screenshot region
+Super+Insert               | Screenshot output
+Shift+Insert               | Screenshot frozen region
+
+Volume
+XF86AudioMicMute           | Toggle mic mute
+XF86AudioMute              | Toggle mute
+Super+Shift+M              | Toggle mute
+XF86AudioRaiseVolume       | Volume up
+XF86AudioLowerVolume       | Volume down
+
+Sleep
+Super+Shift+L              | Suspend
+
+Clipboard & emoji
+Super+V                    | Clipboard picker
+Super+Alt+V                | Clipboard delete
+Super+.                    | Emoji picker
+Ctrl+Shift+Alt+V           | Paste top clipboard entry
