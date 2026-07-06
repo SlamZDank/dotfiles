@@ -29,6 +29,9 @@ unsetopt INC_APPEND_HISTORY
 alias history="history 0"
 alias killwine="kill -9 $(ps aux |grep -i '\.exe' |awk '{print $2}'|tr '\n' ' ')"
 alias vesktop="vesktop –enable-features=UseOzonePlatform --ozone-platform=wayland"
+alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
+
+
 
 
 zshaddhistory() {
@@ -59,8 +62,11 @@ zstyle :compinstall filename '/home/slamzdank/.zshrc'
 
 # For Zsh plugins
 zinit light Aloxaf/fzf-tab
+
 zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
+
+zinit ice wait lucid atload'!_zsh_autosuggest_start'
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-history-substring-search
 
@@ -230,11 +236,3 @@ ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern)
     ZSH_HIGHLIGHT_STYLES[cursor-matchingbracket]=standout
 
 ___MY_VMOPTIONS_SHELL_FILE="${HOME}/.jetbrains.vmoptions.sh"; if [ -f "${___MY_VMOPTIONS_SHELL_FILE}" ]; then . "${___MY_VMOPTIONS_SHELL_FILE}"; fi
-
-# pnpm
-export PNPM_HOME="/home/slamzdank/.local/share/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-# pnpm end
